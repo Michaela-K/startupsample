@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- !! This is a Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"> <!--This is Boostrap layout and contains rows and columns --><!--activate/enable flexbox by using .d-flex etc, then use alignitemscenter to center it. The problem is when we add these two things the button disappears and when we inspect the page the container is only half the page, so we need to tell the page to be the full height of the page right here or in css -->
+      <div class="row"> <!--Use this to get them all in a row(the h1, hr & button). the problem is we look the hr line, so lets divide below into diff sections by adding a 1. header(put text center to make it center),2. section for the hr and button. Just adding these wont work unless you add the columns to position it eg. col-12. The text will now contain all the text in the container. This col-12 ensures it covers the entire width of the container-->
+        <header class="text-center col-12">
+          <h1 class="text-uppercase"><strong>The biggest start up event of the year</strong></h1>
+        </header>
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <hr>
+          <a href="mailchimplink"> 
+          <button class="btn btn-primary btn-xl">Find out more</button><!--we add btn-xl to be able to edit it and make it orange etc-->
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
