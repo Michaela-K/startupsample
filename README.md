@@ -1,0 +1,2 @@
+# startupsample
+ztm startup
