@@ -1,2 +1,2 @@
 # startupsample
-ztm startup
+startup
